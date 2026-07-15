@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Advanced Ultra-Modern UI Design for Auth Container
+   ========================================================================== */
+
+/* Animated Mesh Gradient Background */
+.form-container {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+  overflow: hidden;
+}
+
+/* Subtle background accent blobs for depth */
+.form-container::before,
+.form-container::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(50px);
+  z-index: 1;
+}
+
+.form-container::before {
+  top: -50px;
+  left: -50px;
+}
+
+.form-container::after {
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Frosted Glassmorphism Card Design Container */
+.form-container form {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15),
+    0 1px 10px rgba(0, 0, 0, 0.05);
+  padding: 45px 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  max-width: 440px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.form-container form:hover {
+  transform: translateY(-2px);
+}
+
+/* Luxury Typography with Accent Bar Underneath */
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+  color: #0f172a;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  position: relative;
+}
+
+.form-container form .title::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+  margin: 8px auto 0 auto;
+}
+
+/* Premium Text Box Inputs with Hover / Border FX */
+.form-container form .form-group {
+  margin-bottom: 20px;
+}
+
+.form-container form input {
+  border: 2px solid #e2e8f0;
+  /* Thicker crisp borders */
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 14px;
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.form-container form input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.form-container form input:hover {
+  border-color: #cbd5e1;
+  background-color: #f1f5f9;
+}
+
+/* Dynamic Focus Ring Effect */
+.form-container form input:focus {
+  background-color: #ffffff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+  outline: none;
+}
+
+/* High-End Soft Gradient Button with Ripple Simulation */
+.form-container form button {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  width: 100%;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container form button:hover {
+  border: none;
+  opacity: 0.95;
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.45);
+  transform: scale(1.01);
+}
+
+.form-container form button:active {
+  transform: scale(0.99);
+}
+
+/* Styled Alternative / Secondary Action Link Button */
+.forgot-btn {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  box-shadow: none;
+  margin-top: 14px;
+  font-size: 14px ;
+}
+
+.forgot-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: #cbd5e1;
+  box-shadow: none ;
+  transform: none ;
+}
+
+/* Utility layout fix if your form contains normal inline links */
+.form-container form a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.form-container form a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}

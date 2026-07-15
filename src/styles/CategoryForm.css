@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Admin Dashboard - Category Form UI Custom Elements
+   ========================================================================== */
+
+.custom-category-form {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02);
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* Row wrapper configuration */
+.form-wrapper-row {
+    gap: 12px !important;
+}
+
+/* Custom Text Input Elements */
+.custom-form-input {
+    background-color: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    height: 46px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* High-tech focused outline animations */
+.custom-form-input:focus {
+    background-color: #ffffff !important;
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1) !important;
+    outline: none;
+}
+
+.custom-form-input::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+/* Action Trigger Submit Element */
+.custom-form-btn {
+    background-color: #4f46e5 !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px;
+    padding: 0 24px !important;
+    height: 46px !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+    transition: all 0.2s ease !important;
+    white-space: nowrap;
+}
+
+.custom-form-btn:hover {
+    background-color: #4338ca !important;
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.25);
+    transform: translateY(-1px);
+}
+
+.custom-form-btn:active {
+    transform: translateY(0);
+}

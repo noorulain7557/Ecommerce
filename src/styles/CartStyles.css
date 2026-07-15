@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Cart Page Layout Fixes
+   ========================================================================== */
+.cart-page {
+  margin-top: 30px;
+  padding-bottom: 50px;
+  max-width: 100vw;
+  /* Completely removes horizontal scrollbar leaks */
+  overflow-x: hidden;
+}
+
+/* Page Header Banner */
+.cart-page h1 {
+  padding: 20px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: rgba(0, 0, 255, 0.04) !important;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.cart-page h1>p {
+  font-size: 18px;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* Master row alignment: Keeps left and right sections perfectly aligned at the top */
+.cart-page .row {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+/* ==========================================================================
+   Horizontal Product Cards
+   ========================================================================== */
+.cart-page .card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 15px !important;
+  /* Dynamically calculated height prevents content overlapping */
+  height: auto !important;
+  margin-bottom: 20px !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+/* Product Image Sizing Container */
+.cart-page .card img {
+  width: 145px ;
+  height: 149px ;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+/* Content Details Box Layout */
+.cart-page .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.cart-page .card h4,
+.cart-page .card h5 {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.cart-page .card p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Action Strip Setup for Price and Button Alignment */
+.cart-page .card-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.cart-page .card .price-tag {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* Remove Button Restyling */
+.cart-page .cart-remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.cart-page .cart-remove-btn:hover {
+  background-color: #bd2130;
+}
+
+/* ==========================================================================
+   Right Side Cart Summary Card
+   ========================================================================== */
+.cart-page .cart-summary {
+  text-align: center;
+  padding: 24px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #ededed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.cart-page .cart-summary h2 {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}

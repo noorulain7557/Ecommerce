@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Modern Category Product Gallery Grid
+   ========================================================================== */
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
+
+/* Premium Product Card Container */
+.category .card {
+  background-color: #ffffff;
+  width: 18rem;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Lift-on-hover card micro-interaction */
+.category .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   Image Container & Smooth Zoom-in Effect
+   ========================================================================== */
+.category .card-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f9fa;
+}
+
+.category .card-img-top {
+  height: 260px ;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Clean zoom-in on hover without breaking bounding boxes */
+.category .card:hover .card-img-top {
+  transform: scale(1.06);
+}
+
+/* ==========================================================================
+   Product Info & Content Layout
+   ========================================================================== */
+.category .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.category .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.category .card-price {
+  color: #10b981;
+  /* Modern Emerald green instead of default bright green */
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #ecfdf5;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.category .card-text {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Action Buttons Bar Layout
+   ========================================================================== */
+.category .card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.category button {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px ;
+  /* Smooth curved corners instead of sharp edge fragments */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Primary Button Design (e.g., View Details) */
+.category .btn-primary-action {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+.category .btn-primary-action:hover {
+  background-color: #4338ca;
+}
+
+/* Secondary Button Design (e.g., Add To Cart) */
+.category .btn-secondary-action {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+.category .btn-secondary-action:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}

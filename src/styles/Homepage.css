@@ -1,0 +1,254 @@
+/* ==========================================================================
+   E-Commerce Modern Homepage CSS - Fixed Card Proportions
+   ========================================================================== */
+
+/* Full-width Responsive Banner Optimization */
+.banner-img {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Base Page Grid & Typography Layout */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 15px;
+  background-color: #f8fafc;
+}
+
+.home-page h1 {
+  color: #0f172a;
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Premium Product Gallery Card Element Styles
+   ========================================================================== */
+.home-page .card {
+  background-color: #ffffff;
+  width: 18rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  /* Vital constraint to hide zoom overflow */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dynamic elevation drop shadow micro-interaction */
+.home-page .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+}
+
+/* FIXED CONTAINER: Image layout wrapper ensuring equal boundaries */
+.home-page .card-img-wrapper {
+  width: 100%;
+  height: 280px;
+  /* Locked precise uniform image block height */
+  overflow: hidden;
+  background-color: #f1f5f9;
+  /* Fallback skeleton color */
+  position: relative;
+}
+
+/* FIXED IMAGE SIZE PROPERTY: Crops dynamic aspect ratios cleanly */
+.home-page .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Centers and fills frame beautifully without squishing */
+  object-position: top center;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.home-page .card:hover .card-img-top {
+  transform: scale(1.06);
+  /* Luxury clean zoom-in mask effect */
+}
+
+/* Text & Body Content Details Layout */
+.home-page .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* Pushes button grid down so buttons match line levels */
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.home-page .card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Emerald green tag badge variant instead of flat neon green text */
+.home-page .card-price {
+  color: #10b981;
+  font-weight: 800;
+  font-size: 15px;
+  background-color: #ecfdf5;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.home-page .card-text {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Product Card Bottom Interaction Buttons
+   ========================================================================== */
+.home-page button {
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 8px ;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* "More Details" Button Modifications */
+.home-page .btn-info {
+  background-color: #f1f5f9 ;
+  color: #334155 ;
+  border: 1px solid #e2e8f0 ;
+}
+
+.home-page .btn-info:hover {
+  background-color: #e2e8f0 ;
+  color: #0f172a ;
+}
+
+/* "ADD TO CART" Button Modifications */
+.home-page .btn-dark {
+  background-color: #4f46e5;
+  /* Premium Indigo Accent */
+  color: #ffffff ;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+
+.home-page .btn-dark:hover {
+  background-color: #4338ca ;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.25);
+}
+
+/* ==========================================================================
+   Sidebar Navigation Filter Panels Style Controls
+   ========================================================================== */
+.filters {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+}
+
+.filters h4 {
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a ;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: left ;
+}
+
+.ant-checkbox-wrapper {
+  font-size: 14px;
+  color: #475569;
+  margin: 5px 0 ;
+  transition: color 0.2s ease;
+}
+
+.ant-checkbox-wrapper:hover {
+  color: #4f46e5;
+}
+
+.ant-radio-wrapper {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.ant-radio-wrapper:hover {
+  color: #4f46e5;
+}
+
+.filters .btn-danger {
+  background-color: #ef4444 ;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 8px ;
+  margin-top: 25px;
+  padding: 11px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+.filters .btn-danger:hover {
+  background-color: #dc2626 ;
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.25);
+}
+
+/* ==========================================================================
+   Loadmore Footer Action Layout Controls
+   ========================================================================== */
+.loadmore {
+  color: #4f46e5;
+  background-color: #ffffff;
+  border: 2px solid #4f46e5 ;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 28px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.05);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loadmore:hover {
+  background-color: #4f46e5;
+  color: #ffffff ;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.2);
+  transform: translateY(-1px);
+}

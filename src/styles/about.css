@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Luxury About Page UI Enhancements Stylesheet
+   ========================================================================== */
+
+.about-page-container {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
+.about-hero-section {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 45px 35px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.03);
+}
+
+/* Premium Image Showcase Frame */
+.about-img-frame {
+    width: 100%;
+    max-width: 480px;
+    height: 440px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.08);
+    border: 1px solid #f1f5f9;
+}
+
+.about-display-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about-img-frame:hover .about-display-image {
+    transform: scale(1.05);
+}
+
+/* Editorial Copywriting Text Blocks */
+.about-content-section {
+    padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .about-content-section {
+        padding-left: 15px;
+        margin-top: 35px;
+    }
+
+    .about-img-frame {
+        height: 320px;
+    }
+}
+
+.brand-subtitle {
+    display: inline-block;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.about-main-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.accent-bar {
+    width: 60px;
+    height: 4px;
+    background-color: #4f46e5;
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.about-text-lead {
+    font-size: 15px;
+    color: #566474;
+    line-height: 1.75;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* Feature Grid Cards */
+.value-props-grid .value-item h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 14px;
+}
+
+/* Custom mini timeline/bullet bar indicator */
+.value-props-grid .value-item h5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 2px;
+}
+
+.value-props-grid .value-item p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.4;
+    margin: 0;
+}
