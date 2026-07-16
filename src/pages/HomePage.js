@@ -8,6 +8,9 @@ import { useCart } from "../context/cart";
 import { toast } from "react-toastify";
 import '../styles/Homepage.css';
 
+// Importing the banner image directly so the build system outputs it correctly in production
+import bannerImg from "../images/banner.png";
+
 const HomePage = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
@@ -106,7 +109,7 @@ const HomePage = () => {
   return (
     <Layout title={"All Products - Best offers "}>
       <img
-        src="/images/banner.png"
+        src={bannerImg}
         className="banner-img"
         alt="Homepage Banner"
       />
